@@ -36,3 +36,10 @@ Write-Host $Bkppth unreachable... Check DHCP settings and $key }
 elseif((($bkpint.gettype().Name) -ne 'int32'))
 {
 Write-Host Backup Interval Missing... Check $key}
+
+else 
+{
+Write-Host Unknown error...
+Start-Sleep -Seconds 5
+Write-host Quitting...
+}
